@@ -19,10 +19,13 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Column(name = "nome")
     private String name;
     private String cpf;
+    @Column(name = "endereco")
     private String endereço;
     private String email;
     private String telefone;
+    @Column(name = "data_cadastro")
     private LocalDateTime dataCadastro;
 }
